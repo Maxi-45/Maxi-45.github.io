@@ -49,7 +49,7 @@ template.innerHTML = /*html*/ `
     </style>
 
     <div>
-        <a href="./test.html"><img src="./assets/svg/menu.svg"><p>menu</p></a>
+        <a href="/test.html"><img src="./assets/svg/menu.svg"><p>menu</p></a>
         <a href="">à propos</a>
         <a href="">artistes</a>
         <a href="">discographie</a>
