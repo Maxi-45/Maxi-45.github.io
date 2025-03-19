@@ -1,0 +1,32 @@
+@font-face {
+    font-family: Mersad;
+    src: url(./font/Mersad.ttf);
+}
+
+:root {
+    --fg-white : #f2f0ed;
+    --fg-white-66 : #f2f0eda8;
+    --fg-white-33 : #f2f0ed54;
+    
+    --bg-black : #111111;
+    --bg-black-66 : #111111a8;
+    --bg-black-33 : #11111154;
+    
+    --bg-grey-d : #232323;
+    --bg-grey-d-66 : #232323a8;
+    --bg-grey-d-33 : #23232354;
+    
+    --bg-grey-l : #363636;
+    --bg-grey-l-66 : #363636a8;
+    --bg-grey-l-33 : #36363654;
+}
+
+* {
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-black);
+}
