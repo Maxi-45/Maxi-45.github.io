@@ -24,6 +24,7 @@ const css = /*css*/ `
         text-shadow:
             0 0 1rem var(--fg-white-66),
             0 0 .5rem var(--fg-white);
+        filter: drop-shadow(0px 0px 1rem var(--fg-white))
     }
     
     a:first-of-type {
@@ -48,7 +49,7 @@ template.innerHTML = /*html*/ `
     </style>
 
     <div>
-        <a href=""><img src="./assets/svg/menu.svg"><p>menu</p></a>
+        <a href="./test.html"><img src="./assets/svg/menu.svg"><p>menu</p></a>
         <a href="">à propos</a>
         <a href="">artistes</a>
         <a href="">discographie</a>
