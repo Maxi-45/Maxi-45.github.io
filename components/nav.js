@@ -1,7 +1,7 @@
-const template = document.createElement("template");
+let template = document.createElement("template");
 
-const css = /*css*/ `     
-    div {
+const css = /*css*/ `
+    nav {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -36,25 +36,27 @@ const css = /*css*/ `
 
     img {
         height: 1rem;
+        aspect-ratio: 1/1;
     }
 
     p {
         margin: 0;
     }
 `
-template.innerHTML = /*html*/ `
+
+template.innerHTML = /*html*/`
     <style>
         ${css}
     </style>
 
-    <div>
+    <nav>
         <a href="./test.html"><img src="./assets/svg/menu.svg"><p>menu</p></a>
         <a href="">à propos</a>
         <a href="">artistes</a>
         <a href="">discographie</a>
         <a href="">évènements</a>
         <a href="">contact</a>
-    </div>
+    </nav>
 `
 
 class Nav extends HTMLElement {
@@ -62,8 +64,7 @@ class Nav extends HTMLElement {
         super();
         const shadow = this.attachShadow({mode: "open"});
         shadow.append(template.content.cloneNode(true));
-        this.title.innerHTML = this.innerText;
     }
 }
 
-customElements.define("maxi-nav", Nav)
+customElements.define("maxi-nav", Nav);
