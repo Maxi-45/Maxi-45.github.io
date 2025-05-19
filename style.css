@@ -3,12 +3,6 @@
     src: url(./font/Mersad.ttf);
 }
 
-@media screen and (max-width: 600px) {
-    body {
-        font-size: 8px;
-    }
-}
-
 :root {
     font-size: 12px;
 
@@ -30,6 +24,12 @@
 
     --accent-pink : #F2389E;
     --accent-blue : #0636CC;
+}
+
+@media screen and (max-width: 600px) {
+    :root {
+        font-size: 8px;
+    }
 }
 
 * {
