@@ -50,7 +50,7 @@ template.innerHTML = /*html*/`
     </style>
 
     <nav>
-        <a href="a"><img src="./assets/svg/menu.svg"><p>menu</p></a>
+        <a href="b"><img src="./assets/svg/menu.svg"><p>menu</p></a>
         <a href="">à propos</a>
         <a href="">artistes</a>
         <a href="">discographie</a>
