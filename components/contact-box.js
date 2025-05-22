@@ -2,6 +2,7 @@ let template = document.createElement("template");
 
 const css = /*css*/ `
     div {
+        box-sizing: border-box;
         width: 50vw;
         aspect-ratio: 4/3;
         background-size: cover;

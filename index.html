@@ -15,48 +15,84 @@
     <script defer type="module" src="./components/hero.js"></script>
     <script defer type="module" src="./components/logo.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="placement.css">
 </head>
 <body>
-    <maxi-logo></maxi-logo>
-    <maxi-hero></maxi-hero>
-    <maxi-nav></maxi-nav>
-    <maxi-artist color="pink" src="./assets/img/artist/mv-6.png">
-        Gentille Grimaces
-    </maxi-artist>
-    <maxi-h2 src="./assets/svg/arrow.svg">
-        Évènements
-    </maxi-h2>
-    <maxi-event color="blue" place="Le Quartier Libre" country="France" city="Rouen" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1">
-        21 Juin
-    </maxi-event>
-    <maxi-event color="pink" place="Le Stadium" country="France" city="Rouen" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1">
-        8 Juil
-    </maxi-event>
-    <maxi-event color="blue" place="Le Spot" country="France" city="Rouen" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1">
-        11 Août
-    </maxi-event>
+    <div class="logo">
+        <maxi-logo/>
+    </div>
 
-    <maxi-h2 src="./assets/svg/arrow.svg">
-        Merch Exclusif
-    </maxi-h2>
+    <section class="hero">
+        <maxi-hero/>
+    </section>
 
-    <maxi-product price="20€" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1" src="./assets/img/products/vinyl.jpg">
-        T-Shirt Maxi45
-    </maxi-product>
-    <maxi-product price="20€" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1" src="./assets/img/products/skate-board.jpg">
-        Skate Maxi45
-    </maxi-product>
+    <section class="artist">
+        <maxi-h2 src="./assets/svg/arrow.svg">
+            Artists
+        </maxi-h2>
+        <div class="h-flex">
+            <maxi-artist color="pink" src="./assets/img/artist/mv-6.png">
+                Gentille Grimaces
+            </maxi-artist>
+            <maxi-artist color="pink" src="./assets/img/artist/mv-6.png">
+                Gentille Grimaces
+            </maxi-artist>
+            <maxi-artist color="pink" src="./assets/img/artist/mv-6.png">
+                Gentille Grimaces
+            </maxi-artist>
+        </div>
+    </section>
 
-    <maxi-h2 src="./assets/svg/arrow.svg">
-        Nous rejoindre, une colaboration
-    </maxi-h2>
+    <section class="event">
+        <maxi-h2 src="./assets/svg/arrow.svg">
+            Évènements
+        </maxi-h2>
+        
+        <div class="event-list">
+            <maxi-event color="blue" place="Le Quartier Libre" country="France" city="Rouen" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1">
+                21 Juin
+            </maxi-event>
+            <maxi-event color="pink" place="Le Stadium" country="France" city="Rouen" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1">
+                8 Juil
+            </maxi-event>
+            <maxi-event color="blue" place="Le Spot" country="France" city="Rouen" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1">
+                11 Août
+            </maxi-event>
+        </div>
+    </section>
 
-    <maxi-contact-box bg="./assets/img/bg/form-box-1.png" button="Nous contacter" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1">
-        Vous êtes artistes ?
-    </maxi-contact-box>
-    <maxi-contact-box bg="./assets/img/bg/form-box-2.png" button="Nous contacter" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1">
-        Vous êtes un établissement ou organisez un évènement ?
-    </maxi-contact-box>
+    <section class="merch">
+        <maxi-h2 src="./assets/svg/arrow.svg">
+            Merch Exclusif
+        </maxi-h2>
+        
+        <div class="h-flex">
+            <maxi-product price="20€" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1" src="./assets/img/products/vinyl.jpg">
+                Vynile Maxi45
+            </maxi-product>
+            <maxi-product price="20€" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1" src="./assets/img/products/vinyl.jpg">
+                Vynile Maxi45
+            </maxi-product>
+            <maxi-product price="20€" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1" src="./assets/img/products/skate-board.jpg">
+                Skate Maxi45
+            </maxi-product>
+        </div>
+    </section>
+
+    <section class="contact">
+        <maxi-h2 src="./assets/svg/arrow.svg">
+            Nous rejoindre, une colaboration
+        </maxi-h2>
+        
+        <div class="contact-list">
+            <maxi-contact-box bg="./assets/img/bg/form-box-1.png" button="Nous contacter" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1">
+                Vous êtes artistes ?
+            </maxi-contact-box>
+            <maxi-contact-box bg="./assets/img/bg/form-box-2.png" button="Nous contacter" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1">
+                Vous êtes un établissement ou organisez un évènement ?
+            </maxi-contact-box>
+        </div>
+    </section>
 
     <maxi-h2>
         Contact

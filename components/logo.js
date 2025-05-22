@@ -10,7 +10,6 @@ const css = /*css*/ `
     img {
         position: relative;
         width: 4rem;
-        z-index: 3;
     }
 `
 
