@@ -27,7 +27,7 @@ const css = /*css*/ `
     a {
         color: var(--bg-black);
         font-size: 1rem;
-        padding: .5rem;
+        padding: .5rem .75rem;
         background-color: var(--fg-white);
         border-radius: 1rem;
         width: fit-content;

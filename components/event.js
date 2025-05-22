@@ -91,7 +91,7 @@ template.innerHTML = /*html*/`
                 <img class="star" src="./assets/svg/star-pink.svg"/>
             </div>
             <p class="place">Place</p>
-            <p class="city">City <b class="country" color="pink">Coutry</b></p>
+            <p class="city">City<b class="country" color="pink">Coutry</b></p>
         </div>
         <a>
             <p>Billeterie</p>
@@ -137,7 +137,7 @@ class Event extends HTMLElement {
         city.setAttribute("color", colorAttr);
         star.setAttribute("src", `${svgPath}star-${colorAttr}.svg`);
         arrow.setAttribute("src", `${svgPath}arrow-${colorAttr}.svg`);
-        a.setAttribute("href", href);
+        a.setAttribute("href", hrefAttr);
     }
 }
 

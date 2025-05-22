@@ -48,6 +48,8 @@ class h2 extends HTMLElement {
 
         if (src) {
             img.setAttribute("src", src);
+        } else {
+            img.hidden = true;
         }
         if (text) {
             h2.innerHTML = text;
